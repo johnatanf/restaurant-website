@@ -201,6 +201,7 @@ body {
 .reach-us__map {
   flex: 1;
   margin: 0 2.5rem;
+  height: 45rem;
 }
 .reach-us__details {
   display: flex;
