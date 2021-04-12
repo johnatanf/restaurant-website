@@ -1,0 +1,17 @@
+.heading {
+  &--light {
+    color: $color-grey-light;
+  }
+
+  &--dark {
+    color: $color-grey-dark;
+  }
+  
+  &--secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    letter-spacing: .3rem;
+  }
+}

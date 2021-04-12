@@ -1,0 +1,12 @@
+.section {
+
+  padding: 5rem;
+
+  &-menu {
+    background-color: $color-primary-dark; 
+  }
+
+  &-services {
+    background-color: $color-primary-light;
+  }
+}

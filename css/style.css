@@ -78,6 +78,82 @@ body {
   top: -1px;
 }
 
+.heading--light {
+  color: #F7F7F7;
+}
+.heading--dark {
+  color: #333;
+}
+.heading--secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  letter-spacing: 0.3rem;
+}
+
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  margin: 3rem auto 0 auto;
+}
+
+.menu {
+  display: flex;
+  flex: 0 0 45%;
+  background-color: #F7F7F7;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  margin: 1.5rem;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.7);
+  transition: all 0.1s;
+}
+.menu:hover {
+  transform: translateY(-2px);
+}
+.menu__img {
+  display: inline-block;
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  flex: 0 0 10rem;
+}
+.menu__information {
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+  flex-direction: column;
+  flex: 1;
+  margin-left: 2rem;
+}
+.menu__information-title {
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+.menu__information-description {
+  font-size: 1.5rem;
+  text-transform: lowercase;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+.menu__information-price {
+  font-size: 1.5rem;
+  text-align: right;
+  font-weight: 900;
+  margin-top: 1rem;
+  color: #386641;
+}
+.menu__information-price-previous {
+  color: rgba(56, 102, 65, 0.6);
+  text-decoration: line-through;
+}
+.menu__information-price-current {
+  margin-left: 1rem;
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -117,6 +193,38 @@ body {
   background-color: #386641;
 }
 
+.section {
+  padding: 5rem;
+}
+.section-menu {
+  background-color: #386641;
+}
+.section-services {
+  background-color: #a7c957;
+}
+
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 30%;
+  background-color: #F7F7F7;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.3);
+  font-family: "Open Sans", sans-serif;
+}
+.service__title {
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+  color: #333;
+}
 .socials {
   margin: 4rem 0;
 }
