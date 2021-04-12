@@ -1,0 +1,45 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 8rem;
+  background-color: $color-grey-dark;
+  color: $color-grey-light;
+  text-align: center;
+
+  hr {
+    margin: 1rem 0;
+    border: 1px solid rgba($color-grey-light, .1);
+  }
+
+  &__copyright {
+    font-size: 1.5rem;
+
+    a {
+      &:link,
+      &:visited {
+        color: $color-primary-light;
+        transition: all .1s;
+      }
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+
+  &__information {
+    font-size: 1.25rem;
+
+    a {
+      &:link,
+      &:visited {
+        color: $color-primary-light;
+        transition: all .1s;
+      }
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+}

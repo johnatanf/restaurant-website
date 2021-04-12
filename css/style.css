@@ -22,6 +22,39 @@ body {
   line-height: 1.6;
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 8rem;
+  background-color: #333;
+  color: #F7F7F7;
+  text-align: center;
+}
+.footer hr {
+  margin: 1rem 0;
+  border: 1px solid rgba(247, 247, 247, 0.1);
+}
+.footer__copyright {
+  font-size: 1.5rem;
+}
+.footer__copyright a:link, .footer__copyright a:visited {
+  color: #a7c957;
+  transition: all 0.1s;
+}
+.footer__copyright a:hover {
+  color: #6a994e;
+}
+.footer__information {
+  font-size: 1.25rem;
+}
+.footer__information a:link, .footer__information a:visited {
+  color: #a7c957;
+  transition: all 0.1s;
+}
+.footer__information a:hover {
+  color: #6a994e;
+}
+
 .header {
   position: relative;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/home-intro.jpg");
@@ -243,7 +276,7 @@ body {
   background-color: #a7c957;
 }
 .section-reach-us {
-  background-color: #bc4749;
+  background-color: #386641;
 }
 
 .service-container {
