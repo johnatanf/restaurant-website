@@ -1,0 +1,49 @@
+.reach-us__container {
+  display: flex;
+  margin-top: 5rem;
+}
+
+.reach-us {
+  &__map {
+    flex: 1;
+    margin: 0 2.5rem;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 0 2.5rem;
+    padding: 1rem 2rem;
+    color: $color-grey-light;
+    font-size: 1.5rem;
+
+    &-detail {
+      display: flex;
+      align-items: center;
+      margin: 1rem 0;
+
+      &-icon {
+        fill: $color-grey-light;
+        width: 3rem;
+        height: 3rem;
+      }
+
+      &-text {
+        margin-left: 1.25rem;
+
+        a {
+          &:link,
+          &:visited {
+            color: $color-primary-light;
+            transition: all .1s;
+          }
+
+          &:hover {
+            color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+}

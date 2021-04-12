@@ -193,6 +193,45 @@ body {
   background-color: #386641;
 }
 
+.reach-us__container {
+  display: flex;
+  margin-top: 5rem;
+}
+
+.reach-us__map {
+  flex: 1;
+  margin: 0 2.5rem;
+}
+.reach-us__details {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 0 2.5rem;
+  padding: 1rem 2rem;
+  color: #F7F7F7;
+  font-size: 1.5rem;
+}
+.reach-us__details-detail {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+.reach-us__details-detail-icon {
+  fill: #F7F7F7;
+  width: 3rem;
+  height: 3rem;
+}
+.reach-us__details-detail-text {
+  margin-left: 1.25rem;
+}
+.reach-us__details-detail-text a:link, .reach-us__details-detail-text a:visited {
+  color: #a7c957;
+  transition: all 0.1s;
+}
+.reach-us__details-detail-text a:hover {
+  color: #6a994e;
+}
+
 .section {
   padding: 10rem 5rem;
 }
@@ -201,6 +240,9 @@ body {
 }
 .section-services {
   background-color: #a7c957;
+}
+.section-reach-us {
+  background-color: #bc4749;
 }
 
 .service-container {
