@@ -194,7 +194,7 @@ body {
 }
 
 .section {
-  padding: 5rem;
+  padding: 10rem 5rem;
 }
 .section-menu {
   background-color: #386641;
@@ -206,25 +206,62 @@ body {
 .service-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5rem;
 }
 
 .service {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   flex: 0 1 30%;
   background-color: #F7F7F7;
-  padding: 1rem 2rem;
+  margin: 1.25rem;
+  padding: 4rem 5rem;
   border-radius: 3px;
   box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.3);
   font-family: "Open Sans", sans-serif;
+  transition: all 0.1s;
+}
+.service:hover {
+  transform: translateY(-3px);
+}
+.service__content-container {
+  display: flex;
+  flex-direction: column;
+}
+.service__icon {
+  fill: #333;
+  width: 7rem;
+  height: 7rem;
+  margin: 0 auto 1.25rem auto;
 }
 .service__title {
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  text-align: center;
   color: #333;
 }
+.service__description {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+.service__button:link, .service__button:visited {
+  text-decoration: none;
+  color: #F7F7F7;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  background-color: #bc4749;
+  padding: 0.5rem 1rem;
+  align-self: center;
+  margin-top: 2rem;
+  border-radius: 3px;
+}
+
 .socials {
   margin: 4rem 0;
 }
