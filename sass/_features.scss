@@ -1,0 +1,40 @@
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 30%;
+  align-items: center;
+  background-color: $color-primary-dark;
+  padding: 2rem 4rem;
+  margin: 3rem 2rem;
+  border-radius: 3px;
+  box-shadow: 0 .25rem .25rem rgba($color-black, .3);
+
+  &__icon {
+    width: 8rem;
+    height: 8rem;
+    flex: 0 0 8rem;
+    fill: $color-primary-light;
+  }
+
+  &__title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: .1rem;
+    margin: 1rem 0;
+    color: $color-primary-light;
+  }
+
+  &__description {
+    font-size: 1.5rem;
+    text-align: center;
+    color: $color-grey-light;
+  }
+}

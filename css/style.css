@@ -22,6 +22,44 @@ body {
   line-height: 1.6;
 }
 
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 30%;
+  align-items: center;
+  background-color: #386641;
+  padding: 2rem 4rem;
+  margin: 3rem 2rem;
+  border-radius: 3px;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.3);
+}
+.feature__icon {
+  width: 8rem;
+  height: 8rem;
+  flex: 0 0 8rem;
+  fill: #a7c957;
+}
+.feature__title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+  margin: 1rem 0;
+  color: #a7c957;
+}
+.feature__description {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #F7F7F7;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -303,6 +341,9 @@ body {
 .section-who-are-we {
   background-color: #386641;
   padding: 10rem 20rem;
+}
+.section-features {
+  background-color: #a7c957;
 }
 
 .service-container {
