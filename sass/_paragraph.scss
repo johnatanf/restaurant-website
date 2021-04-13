@@ -1,0 +1,12 @@
+.paragraph {
+  font-size: 1.75rem;
+  margin: 1.75rem;
+
+  &--light {
+    color: $color-grey-light;
+  }
+
+  &--dark {
+    color: $color-grey-dark;
+  }
+}

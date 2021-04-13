@@ -64,6 +64,9 @@ body {
 .header--home {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/home-intro.jpg");
 }
+.header--about-us {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/about-us-intro.jpg");
+}
 
 .heading-container {
   display: flex;
@@ -90,6 +93,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
   letter-spacing: 0.1rem;
+  text-align: center;
 }
 .heading-container__button {
   display: block;
@@ -233,6 +237,17 @@ body {
   background-color: #6a994e;
 }
 
+.paragraph {
+  font-size: 1.75rem;
+  margin: 1.75rem;
+}
+.paragraph--light {
+  color: #F7F7F7;
+}
+.paragraph--dark {
+  color: #333;
+}
+
 .reach-us__container {
   display: flex;
   margin-top: 5rem;
@@ -284,6 +299,10 @@ body {
 }
 .section-reach-us {
   background-color: #386641;
+}
+.section-who-are-we {
+  background-color: #386641;
+  padding: 10rem 20rem;
 }
 
 .service-container {
