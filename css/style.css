@@ -57,10 +57,12 @@ body {
 
 .header {
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/home-intro.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+}
+.header--home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/home-intro.jpg");
 }
 
 .heading-container {
