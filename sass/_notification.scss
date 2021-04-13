@@ -1,0 +1,27 @@
+.notification {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-width: 30rem;
+  max-width: 60rem;
+  margin: 1rem auto 0 auto;
+  background-color: $color-grey-light;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  box-shadow: 0 .25rem .25rem rgba($color-black, .3);
+
+  &--hidden {
+    display: none;
+  }
+
+  &__icon {
+    width: 5rem;
+    height: 5rem;
+    margin-right: 1.25rem;
+    fill: $color-primary;
+  }
+
+  &__message {
+    font-size: 1.5rem;
+  }
+}

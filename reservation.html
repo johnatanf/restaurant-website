@@ -31,7 +31,13 @@
   <main class="main">
     <section class="section section-book-reservation">
       <h2 class="heading--secondary heading--dark">Book reservation</h2>
-      <form class="form">
+      <div class="notification notification--hidden">
+        <svg class="notification__icon">
+          <use xlink:href="img/sprites.svg#icon-checkbox-checked"></use>
+        </svg>
+        <span class="notification__message">Thank you, we'll send you a confirmation email soon! Note: Nothing has been submitted, this is just for demo purposes. Thanks for checking out my portfolio!</span>
+      </div>
+      <form class="form" action="#" onsubmit="event.preventDefault(); submitReservation();">
         <div class="form__field-container">
           <label class="form__label" for="name">Name</label>
           <div class="form__input-container">
@@ -96,5 +102,6 @@
     <hr>
     <p class="footer__information">The restaurant presented in this website is fake. This website was created for my portfolio and is meant to serve as a demo. Images were obtained from <a href="https://unsplash.com/" target="_blank">Unsplash</a>, and icons from <a href="https://icomoon.io/" target="_blank">IcoMoon</a>.</p>
   </footer>
+  <script src="index.js"></script>
 </body>
 </html>

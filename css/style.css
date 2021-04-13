@@ -347,6 +347,31 @@ body {
   background-color: #6a994e;
 }
 
+.notification {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-width: 30rem;
+  max-width: 60rem;
+  margin: 1rem auto 0 auto;
+  background-color: #F7F7F7;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.3);
+}
+.notification--hidden {
+  display: none;
+}
+.notification__icon {
+  width: 5rem;
+  height: 5rem;
+  margin-right: 1.25rem;
+  fill: #6a994e;
+}
+.notification__message {
+  font-size: 1.5rem;
+}
+
 .paragraph {
   font-size: 1.75rem;
   margin: 1.75rem;

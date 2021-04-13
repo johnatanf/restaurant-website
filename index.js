@@ -1,3 +1,15 @@
+const submitReservation = event => {
+    const notification = document.querySelector('.notification');
+    const timerId = null;
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    notification.classList.remove('notification--hidden');
+    setTimeout(() => { // hides notification after 8 seconds 
+        notification.classList.add('notification--hidden');
+    }, 8000);
+}
+
+/* LEAFLETJS CODE */ 
 var mymap = L.map('mapid').setView([-6.205844095987677, 106.83820859555249], 13);
 var marker = L.marker([-6.205844095987677, 106.83820859555249]).addTo(mymap);
 
