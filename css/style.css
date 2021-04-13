@@ -98,6 +98,73 @@ body {
   color: #6a994e;
 }
 
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #386641;
+  color: #F7F7F7;
+  width: 100%;
+  min-width: 30rem;
+  max-width: 60rem;
+  padding: 3.5rem 4rem;
+  margin: 5rem auto 0 auto;
+  border-radius: 3px;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.7);
+  font-size: 1.5rem;
+}
+.form__field-container {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 100%;
+  margin: 1rem 0;
+}
+.form__field-container--half {
+  flex: 0 0 45%;
+}
+.form__label {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+.form__input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.form__input-icon {
+  position: absolute;
+  fill: rgba(0, 0, 0, 0.7);
+  width: 2rem;
+  height: 2rem;
+  margin-left: 1rem;
+}
+.form__input {
+  font-size: 1.5rem;
+  font-family: "Open Sans", sans-serif;
+  padding: 1rem 1rem 1rem 4rem;
+  width: 100%;
+}
+.form__submit-button {
+  background-color: #ab3e40;
+  border: 0;
+  color: white;
+  margin-top: 3rem;
+  border-radius: 3px;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+.form__submit-button:hover {
+  background-color: #bc4749;
+}
+
 .header {
   position: relative;
   background-size: cover;
@@ -348,6 +415,9 @@ body {
   padding: 10rem 20rem;
 }
 .section-features {
+  background-color: #a7c957;
+}
+.section-book-reservation {
   background-color: #a7c957;
 }
 
