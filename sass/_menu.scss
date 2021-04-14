@@ -4,6 +4,14 @@
   justify-content: center;
   width: 80%;
   margin: 3rem auto 0 auto;
+
+  @media only screen and (max-width: $bp-large) {
+    flex-direction: column;
+  }
+
+  @media only screen and (max-width: $bp-tiny) {
+    width: 100%;
+  }
 }
 
 .menu {

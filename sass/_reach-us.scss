@@ -1,6 +1,10 @@
 .reach-us__container {
   display: flex;
   margin-top: 5rem;
+
+  @media only screen and (max-width: $bp-large) {
+    flex-direction: column;
+  }
 }
 
 .reach-us {
@@ -8,6 +12,10 @@
     flex: 1;
     margin: 0 2.5rem;
     height: 45rem;
+
+    @media only screen and (max-width: $bp-large) {
+      flex: 0 0 40rem;
+    }
   }
 
   &__details {

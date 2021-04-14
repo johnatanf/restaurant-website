@@ -21,6 +21,10 @@
 
     &--half {
       flex: 0 0 45%;
+
+      @media only screen and (max-width: $bp-very-small) {
+        flex: 0 0 100%;
+      }
     }
   }
 
@@ -66,6 +70,10 @@
     box-shadow: 0 .25rem .25rem rgba($color-black, .5);
     cursor: pointer;
     transition: background-color .1s;
+
+    @media only screen and (max-width: $bp-very-small) {
+      flex: 1;
+    }
 
     &:hover {
       background-color: $color-secondary;

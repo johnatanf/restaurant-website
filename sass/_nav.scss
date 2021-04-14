@@ -9,6 +9,16 @@
   background-color: $color-primary-dark;
   width: 100%;
   justify-content: space-between;
+  z-index: 10;
+
+  @media only screen and (max-width: $bp-very-small) {
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+
+  @media only screen and (max-width: $bp-tiny) {
+    position: relative;
+  }
 
   &__logo {
     font-family: "Poppins", sans-serif;
@@ -26,10 +36,18 @@
     display: flex;
     justify-content: flex-end;
     list-style: none;
+
+    @media only screen and (max-width: $bp-tiny) {
+      margin-top: 1.25rem;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 100%;
+    }
   }
 
   &__link {
     transition: background-color .2s;
+    text-align: center;
 
     a:link,
     a:visited {
@@ -39,6 +57,7 @@
       text-transform: uppercase;
       padding: 1rem 3rem;
       text-decoration: none;
+      width: 100%;
     }
 
     &:hover {

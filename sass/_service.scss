@@ -18,6 +18,18 @@
   font-family: "Open Sans", sans-serif;
   transition: all .1s;
 
+  @media only screen and (max-width: $bp-very-large) {
+    flex: 0 1 45%;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    flex: 0 1 80%;
+  }
+
+  @media only screen and (max-width: $bp-tiny) {
+    flex: 0 1 100%;
+  }
+
   &:hover {
     transform: translateY(-3px);
   }

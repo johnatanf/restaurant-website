@@ -2,6 +2,10 @@
 
   padding: 10rem 5rem;
 
+  @media only screen and (max-width: $bp-tiny) {
+    padding: 10rem 2rem;
+  }
+
   &-menu {
     background-color: $color-primary-dark; 
   }
@@ -17,6 +21,18 @@
   &-who-are-we {
     background-color: $color-primary-dark;
     padding: 10rem 20rem;
+
+    @media only screen and (max-width: $bp-very-large) {
+      padding: 10rem 10rem;
+    }
+
+    @media only screen and (max-width: $bp-very-small) {
+      padding: 10rem 5rem;
+    }
+
+    @media only screen and (max-width: $bp-tiny) {
+      padding: 10rem 2rem;
+    }
   }
 
   &-features {
