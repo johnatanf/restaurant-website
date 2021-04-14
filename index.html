@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vegan Resto | Serving delicious, healthy and eco-friendly food</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="nav">
+    <p class="nav__logo"><a href="#">VEGAN RESTO</a></p>
+    <ul class="nav__links">
+      <li class="nav__link active">
+        <a href="/">Home</a>
+      </li>
+      <li class="nav__link">
+        <a href="/about-us.html">About Us</a>
+      </li>
+      <li class="nav__link">
+        <a href="/reservation.html">Book Reservation</a>
+      </li>
+    </ul>
+  </nav>
+  <header class="header header--home">
+    <div class="heading-container">
+      <h1 class="heading-container__heading">Vegan Resto</h1>
+      <hr>
+      <p class="heading-container__subheading">Serving delicious, healthy and eco-friendly food</p>
+      <div class="socials">
+        <a href="#">
+          <svg class="socials__icon">
+            <use xlink:href="img/sprites.svg#icon-twitter"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg class="socials__icon">
+            <use xlink:href="img/sprites.svg#icon-facebook2"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg class="socials__icon">
+            <use xlink:href="img/sprites.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </div>
+      <a href="#menu" class="heading-container__button">View menu</a>
+    </div>
+  </header>
+  <main class="main">
+    <section id="menu" class="section section-menu">
+      <h2 class="heading--secondary heading--light">Menu</h2>
+      <div class="menu-container">
+        <div class="menu">
+          <img src="img/menu/item-1.jpg" alt="menu #1" class="menu__img">
+          <div class="menu__information">
+            <span class="menu__information-title">Item #1</span>
+            <hr>
+            <span class="menu__information-description">tomatoes, spinach and vegan cheese</span>
+            <div class="menu__information-price">
+              <span class="menu__information-price-current">$5.00</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu">
+          <img src="img/menu/item-2.jpg" alt="menu #2" class="menu__img">
+          <div class="menu__information">
+            <span class="menu__information-title">Item #2</span>
+            <hr>
+            <span class="menu__information-description">Lorem, ipsum, dolor sit amet</span>
+            <div class="menu__information-price">
+              <span class="menu__information-price-current">$4.50</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu">
+          <img src="img/menu/item-3.jpg" alt="menu #3" class="menu__img">
+          <div class="menu__information">
+            <span class="menu__information-title">Item #3</span>
+            <hr>
+            <span class="menu__information-description">Lorem, ipsum, dolor sit amet</span>
+            <div class="menu__information-price">
+              <span class="menu__information-price-current">$12.00</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu">
+          <img src="img/menu/item-4.jpg" alt="menu #3" class="menu__img">
+          <div class="menu__information">
+            <span class="menu__information-title">Item #4</span>
+            <hr>
+            <span class="menu__information-description">Lorem, ipsum, dolor sit amet</span>
+            <div class="menu__information-price">
+              <span class="menu__information-price-current">$16.99</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu">
+          <img src="img/menu/item-5.jpg" alt="menu #5" class="menu__img">
+          <div class="menu__information">
+            <span class="menu__information-title">Item #5</span>
+            <hr>
+            <span class="menu__information-description">Lorem, ipsum, dolor sit amet</span>
+            <div class="menu__information-price">
+              <span class="menu__information-price-current">$3.00</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu">
+          <img src="img/menu/item-6.jpg" alt="menu #6" class="menu__img">
+          <div class="menu__information">
+            <span class="menu__information-title">Item #6</span>
+            <hr>
+            <span class="menu__information-description">Lorem, ipsum, dolor sit amet</span>
+            <div class="menu__information-price">
+              <span class="menu__information-price-current">$25.00</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu">
+          <img src="img/menu/item-7.jpg" alt="menu #7" class="menu__img">
+          <div class="menu__information">
+            <span class="menu__information-title">Item #7</span>
+            <hr>
+            <span class="menu__information-description">Lorem, ipsum, dolor sit amet</span>
+            <div class="menu__information-price">
+              <span class="menu__information-price-current">$11.00</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu">
+          <img src="img/menu/item-8.jpg" alt="menu #8" class="menu__img">
+          <div class="menu__information">
+            <span class="menu__information-title">Item #8</span>
+            <hr>
+            <span class="menu__information-description">Lorem, ipsum, dolor sit amet</span>
+            <div class="menu__information-price">
+              <span class="menu__information-price-previous">$2.50</span>
+              <span class="menu__information-price-current">$1.99</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu">
+          <img src="img/menu/item-9.jpg" alt="menu #9" class="menu__img">
+          <div class="menu__information">
+            <span class="menu__information-title">Item #9</span>
+            <hr>
+            <span class="menu__information-description">Lorem, ipsum, dolor sit amet</span>
+            <div class="menu__information-price">
+              <span class="menu__information-price-current">$2.50</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu">
+          <img src="img/menu/item-10.jpg" alt="menu #10" class="menu__img">
+          <div class="menu__information">
+            <span class="menu__information-title">Item #10</span>
+            <hr>
+            <span class="menu__information-description">Lorem, ipsum, dolor sit amet</span>
+            <div class="menu__information-price">
+              <span class="menu__information-price-current">$25.00</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu">
+          <img src="img/menu/item-11.jpg" alt="menu #11" class="menu__img">
+          <div class="menu__information">
+            <span class="menu__information-title">Item #11</span>
+            <hr>
+            <span class="menu__information-description">Lorem, ipsum, dolor sit amet</span>
+            <div class="menu__information-price">
+              <span class="menu__information-price-current">$13.99</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu">
+          <img src="img/menu/item-12.jpg" alt="menu #3" class="menu__img">
+          <div class="menu__information">
+            <span class="menu__information-title">Item #12</span>
+            <hr>
+            <span class="menu__information-description">Lorem, ipsum, dolor sit amet</span>
+            <div class="menu__information-price">
+              <span class="menu__information-price-current">$17.50</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu">
+          <img src="img/menu/item-13.jpg" alt="menu #13" class="menu__img">
+          <div class="menu__information">
+            <span class="menu__information-title">Item #13</span>
+            <hr>
+            <span class="menu__information-description">Lorem, ipsum, dolor sit amet</span>
+            <div class="menu__information-price">
+              <span class="menu__information-price-current">$7.00</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu">
+          <img src="img/menu/item-14.jpg" alt="menu #14" class="menu__img">
+          <div class="menu__information">
+            <span class="menu__information-title">Item #14</span>
+            <hr>
+            <span class="menu__information-description">Lorem, ipsum, dolor sit amet</span>
+            <div class="menu__information-price">
+              <span class="menu__information-price-previous">$25.00</span>
+              <span class="menu__information-price-current">$20.00</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu">
+          <img src="img/menu/item-15.jpg" alt="menu #15" class="menu__img">
+          <div class="menu__information">
+            <span class="menu__information-title">Item #15</span>
+            <hr>
+            <span class="menu__information-description">Lorem, ipsum, dolor sit amet</span>
+            <div class="menu__information-price">
+              <span class="menu__information-price-current">$21.00</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu">
+          <img src="img/menu/item-16.jpg" alt="menu #16" class="menu__img">
+          <div class="menu__information">
+            <span class="menu__information-title">Item #16</span>
+            <hr>
+            <span class="menu__information-description">Lorem, ipsum, dolor sit amet</span>
+            <div class="menu__information-price">
+              <span class="menu__information-price-current">$19.50</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-services">
+      <h2 class="heading--secondary heading--dark">Services</h2>
+      <div class="service-container">
+        <div class="service">
+          <div class="service__content-container">
+            <svg class="service__icon">
+              <use xlink:href="img/sprites.svg#icon-spoon-knife"></use>
+            </svg>
+            <span class="service__title">Dine-in</span>
+            <span class="service__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur atque deleniti excepturi nisi nostrum impedit! Voluptate repellendus illum, veniam doloribus deserunt quas quae qui nemo ipsam quia rem consequuntur veritatis.</span>
+          </div>
+          <a href="/reservation.html" class="service__button">Book reservation</a>
+        </div>
+
+        <div class="service">
+          <div class="service__content-container">
+            <svg class="service__icon">
+              <use xlink:href="img/sprites.svg#icon-cart"></use>
+            </svg>
+            <span class="service__title">Catering</span>
+            <span class="service__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima modi officia, fugit ullam delectus molestiae voluptatibus ducimus vero officiis totam iusto fugiat molestias eum, saepe nulla. Minima adipisci quis ipsa!</span>
+          </div>
+          <a href="#" class="service__button">Contact us</a>
+        </div>
+
+        <div class="service">
+          <div class="service__content-container">
+            <svg class="service__icon">
+              <use xlink:href="img/sprites.svg#icon-truck"></use>
+            </svg>
+            <span class="service__title">Delivery</span>
+            <span class="service__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At minus, officiis vero deleniti ipsam dolorem modi ratione quidem, aut, ab exercitationem debitis eos eaque eum sed. Quos officiis possimus vero.</span>
+          </div>
+          <a href="#" class="service__button">Order food</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-reach-us">
+      <h2 class="heading--secondary heading--light">Reach us</h2>
+      <div class="reach-us__container">
+        <div id="mapid" class="reach-us__map">
+          MAP
+        </div>
+        <div class="reach-us__details">
+          <div class="reach-us__details-detail">
+            <svg class="reach-us__details-detail-icon">
+              <use xlink:href="img/sprites.svg#icon-location"></use>
+            </svg>
+            <span class="reach-us__details-detail-text">
+              Jakarta, Indonesia
+            </span>
+          </div>
+          <div class="reach-us__details-detail">
+            <svg class="reach-us__details-detail-icon">
+              <use xlink:href="img/sprites.svg#icon-phone"></use>
+            </svg>
+            <span class="reach-us__details-detail-text">
+              555 (555) 5555
+            </span>
+          </div>
+          <div class="reach-us__details-detail">
+            <svg class="reach-us__details-detail-icon">
+              <use xlink:href="img/sprites.svg#icon-mail4"></use>
+            </svg>
+            <span class="reach-us__details-detail-text">
+              <a href="mailto:fakeemail@veganresto.com">fakeemail@veganresto.com</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p class="footer__copyright">Created by Johnatan Fallen &copy; 2021. <a href="https://johnatanf.github.io" target="_blank">View my portfolio</a>.</p>
+    <hr>
+    <p class="footer__information">The restaurant presented in this website is fake. This website was created for my portfolio and is meant to serve as a demo. Images were obtained from <a href="https://unsplash.com/" target="_blank">Unsplash</a>, and icons from <a href="https://icomoon.io/" target="_blank">IcoMoon</a>.</p>
+  </footer>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+  <script src="index.js"></script>
+</body>
+</html>
